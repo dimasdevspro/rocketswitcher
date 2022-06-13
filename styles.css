@@ -1,0 +1,57 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light);
+}
+
+.changeColor {
+    background-color: var(--dark);
+}
+
+.switcher {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    display: flex;
+    width: 14.6875rem;
+    height: 6.375rem;
+    background-color: var(--label);
+    border-radius: 3.6875rem;
+    justify-content: space-around;
+}
+
+.switcher-button {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    display: flex;
+    width: 14.6875rem;
+    height: 6.375rem;
+    border-radius: 3.6875rem;
+    align-items: center;
+    padding: .3rem 1rem;
+}
+
+.switcher-button button {
+    position: absolute;
+    width: 5.375rem;
+    height: 5.375rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.circle.slide {
+    right: 1rem;
+    transition: all 2s linear;
+}
